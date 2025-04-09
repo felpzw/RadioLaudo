@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Container principal */
+  .image-uploader-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título */
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a3c6e;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Estilo da Dropzone */
+  .dropzone {
+    border: 2px dashed #4a90e2;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .dropzone:hover,
+  .dropzone-active {
+    border-color: #1a3c6e;
+    background-color: #f0f7ff;
+  }
+  
+  .dropzone p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Spinner de carregamento */
+  .spinner {
+    margin-top: 15px;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #4a90e2;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Container do Laudo */
+  .laudo-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Texto de carregamento */
+  .loading-text {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #4a90e2;
+  }
+  
+  /* Estilo do Laudo */
+  .laudo-content {
+    padding: 10px;
+  }
+  
+  .laudo-content h2 {
+    font-size: 1.5rem;
+    color: #1a3c6e;
+    margin-bottom: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
+  }
+  
+  .laudo-item {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .laudo-item strong {
+    color: #1a3c6e;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+  
+  .laudo-item span {
+    color: #555;
+  }
